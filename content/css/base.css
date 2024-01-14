@@ -1,3 +1,4 @@
+/* Header */
 :root {
     --main-color: #00c9a5;
     --nav-color: #00afa5;
@@ -54,33 +55,9 @@ body{
  .header .navbar a:hover {
     color: var(--black);
  }
+ /* Header end */
 
- /* Home section */
-
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
-    margin-top: 10vh;
-    background-image: url(/content/images/Background-westcoast.webp);
-    background-size: cover;
-    background-position: right;
-}
-
-.btn {
-    background-color: var(--main-color);
-    color: #ffffff;
-    font-size: 1.8rem;
-    font-weight:600;
-    padding:0.8rem 2.5rem;
-    border-radius: 1.6rem;
-    cursor: pointer;
-}
-
-.btn:hover {
-    color: var(--black);
-}
+ 
 
 
 
