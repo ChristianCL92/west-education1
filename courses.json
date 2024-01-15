@@ -1,0 +1,127 @@
+{
+  "courses": [
+    {
+      "id": 1,
+
+      "CourseTitle": "JavaScript",
+
+      "CourseDuration": "4 weeks",
+
+      "TeachingMethod": "Online",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.6
+    },
+
+    {
+      "id": 2,
+
+      "CourseTitle": "Solidity and Blockchain Development",
+
+      "CourseDuration": "6 weeks",
+
+      "TeachingMethod": "In-person",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.7
+    },
+
+    {
+      "id": 3,
+
+      "CourseTitle": "Rust Programming",
+
+      "CourseDuration": "5 weeks",
+
+      "TeachingMethod": "Online",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.7
+    },
+
+    {
+      "id": 4,
+
+      "CourseTitle": "Information Technology",
+
+      "CourseDuration": "8 weeks",
+
+      "TeachingMethod": "In-person",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.5
+    },
+
+    {
+      "CourseTitle": "Systems Science",
+
+      "id": 5,
+
+      "CourseDuration": "3 weeks",
+
+      "TeachingMethod": "Online",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.5
+    },
+
+    {
+      "id": 6,
+
+      "CourseTitle": "Network and Systems Administration",
+
+      "CourseDuration": "7 weeks",
+
+      "TeachingMethod": "In-person",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.6
+    },
+
+    {
+      "id": 7,
+
+      "CourseTitle": "Cybersecurity",
+
+      "CourseDuration": "6 weeks",
+
+      "TeachingMethod": "Online",
+
+      "StartDate": "2024-09-01"
+    },
+
+    {
+      "id": 8,
+
+      "CourseTitle": "Data Analysis",
+
+      "CourseDuration": "5 weeks",
+
+      "TeachingMethod": "In-person",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.8
+    },
+
+    {
+      "id": 9,
+
+      "CourseTitle": "Cloud Services and Cloud Computing",
+
+      "CourseDuration": "4 weeks",
+
+      "TeachingMethod": "In-person",
+
+      "StartDate": "2024-09-01",
+
+      "Rating": 4.6
+    }
+  ]
+}
