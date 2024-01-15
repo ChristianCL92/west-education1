@@ -1,13 +1,14 @@
 import HttpClient from './http.js';
 
 async function getData() {
-  const url = 'http://localhost:3001/courses';
-
-  const response = await fetch(url);
+  const url = 'http://localhost:3000/courses';
 
   const http = new HttpClient(url);
+    const courses = await http.get();
 
-  const courses = http.get(); /* try{
+    console.log(courses);
+  
+  /* try{
 
         const response = await fetch(url);
 
@@ -27,3 +28,4 @@ async function getData() {
 }
 
 getData();
+
