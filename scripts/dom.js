@@ -15,14 +15,24 @@ function displayCourses (course) {
     courseDuration.textContent = `Course Duration:${course.CourseDuration}`;
     card.appendChild(courseDuration);
 
-    const button = document.createElement('button');
-    button.classList.add("btn-more");
-    button.textContent = "Read More";
-    card.appendChild(button);
+    const readMoreBtn = openSingleCourse(course.id)
+    card.appendChild(readMoreBtn);
 
-    return card;
+    return card;  
 }
 
+
+function openSingleCourse (courseId) {
+
+    const button = document.createElement('button');
+    button.classList.add('btn-more');
+    button.textContent = 'Read More';
+
+    button.addEventListener("click", () => {
+        location.href = `course-details.html?id=${courseId}`
+    })
+    return button;
+}
 
 
 export {displayCourses};
