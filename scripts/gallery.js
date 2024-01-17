@@ -1,31 +1,23 @@
 import HttpClient from './http.js';
+import { displayCourses } from './dom.js';
 
-async function getData() {
+async function getDataAndDisplay() {
   const url = 'http://localhost:3000/courses';
-
   const http = new HttpClient(url);
+  try {
     const courses = await http.get();
-
     console.log(courses);
-  
-  /* try{
-
-        const response = await fetch(url);
-
-        if(response.ok) {
-
-            const data = await response.json();
-
-            console.log(data);
-
-        }
-
-    } catch(error) {
-
-        console.error("Error fetching data:", error);
-
-    } */
+    courses.forEach((course)=> {
+      const courseElement = displayCourses(course);
+      document.getElementById('Our-Courses').appendChild(courseElement);
+      
+    })
+  } catch (error) {
+    console.log("Error getting courses:", error);
+  }
+      
 }
 
-getData();
+
+document.addEventListener("DOMContentLoaded", getDataAndDisplay)
 
