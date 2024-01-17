@@ -12,8 +12,11 @@ function displayCourses (course) {
     card.appendChild(courseTitle);
 
     const courseDuration = document.createElement("h4");
-    courseDuration.textContent = `${course.CourseDuration}`;
+    courseDuration.textContent = `Course Duration:${course.CourseDuration}`;
     card.appendChild(courseDuration);
+
+    const button = document.createElement('button');
+    card.appendChild(button);
 
     
 
