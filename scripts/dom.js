@@ -16,12 +16,14 @@ function displayCourses (course) {
     card.appendChild(courseDuration);
 
     const button = document.createElement('button');
+    button.classList.add("btn-more");
+    button.textContent = "Read More";
     card.appendChild(button);
-
-    
 
     return card;
 }
+
+
 
 export {displayCourses};
 

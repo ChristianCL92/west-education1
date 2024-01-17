@@ -11,6 +11,8 @@
 
       "StartDate": "2024-09-01",
 
+      "imageUrl": "course1.webp",
+
       "Rating": 4.6
     },
 
@@ -24,6 +26,8 @@
       "TeachingMethod": "In-person",
 
       "StartDate": "2024-09-01",
+
+      "imageUrl": "course2.webp",
 
       "Rating": 4.7
     },
@@ -39,6 +43,8 @@
 
       "StartDate": "2024-09-01",
 
+      "imageUrl": "course3.webp",
+
       "Rating": 4.7
     },
 
@@ -52,6 +58,8 @@
       "TeachingMethod": "In-person",
 
       "StartDate": "2024-09-01",
+
+      "imageUrl": "course4.webp",
 
       "Rating": 4.5
     },
@@ -67,6 +75,8 @@
 
       "StartDate": "2024-09-01",
 
+      "imageUrl": "course5.webp",
+
       "Rating": 4.5
     },
 
@@ -81,6 +91,8 @@
 
       "StartDate": "2024-09-01",
 
+      "imageUrl": "course6.webp",
+
       "Rating": 4.6
     },
 
@@ -93,7 +105,11 @@
 
       "TeachingMethod": "Online",
 
-      "StartDate": "2024-09-01"
+      "StartDate": "2024-09-01",
+
+      "imageUrl": "course7.webp",
+
+      "Rating": 4.6
     },
 
     {
@@ -106,6 +122,8 @@
       "TeachingMethod": "In-person",
 
       "StartDate": "2024-09-01",
+
+      "imageUrl": "course8.webp",
 
       "Rating": 4.8
     },
@@ -120,6 +138,8 @@
       "TeachingMethod": "In-person",
 
       "StartDate": "2024-09-01",
+
+      "imageUrl": "course9.webp",
 
       "Rating": 4.6
     }

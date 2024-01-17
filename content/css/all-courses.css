@@ -21,6 +21,18 @@ main {
     margin-bottom: 0.3rem;
 }
 
+.btn-more {
+    color: floralwhite;
+    background-color: #00c9a5;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+
+
 @media (max-width:600px) {
     .grid {
         grid-template-columns: 1fr;
