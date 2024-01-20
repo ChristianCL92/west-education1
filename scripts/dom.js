@@ -4,7 +4,7 @@ function displayCourses (course) {
 
     const paragraphElement = document.createElement("p");
     paragraphElement.textContent = `ID: ${course.id}`;
-    paragraphElement
+    
     card.appendChild(paragraphElement);
 
     const courseTitle = document.createElement("h3");
@@ -15,14 +15,14 @@ function displayCourses (course) {
     courseDuration.textContent = `Course Duration:${course.CourseDuration}`;
     card.appendChild(courseDuration);
 
-    const readMoreBtn = openSingleCourse(course.id)
+    const readMoreBtn = openSingleCourseHandler(course.id)
     card.appendChild(readMoreBtn);
 
     return card;  
 }
 
 
-function openSingleCourse (courseId) {
+function openSingleCourseHandler (courseId) {
 
     const button = document.createElement('button');
     button.classList.add('btn-more');
@@ -34,8 +34,32 @@ function openSingleCourse (courseId) {
     return button;
 }
 
+function singleCourseData (course) {
+    const courseCard = document.createElement("div");
 
-export {displayCourses};
+    const courseTitle = document.createElement("h1");
+    const courseNumber = document.createElement("p");
+    const courseDuration = document.createElement("p");
+    const teachingMethod = document.createElement("p");
+    const courseStart = document.createElement("p");
+
+    courseTitle.textContent = `${course.CourseTitle}`;
+    courseNumber.textContent = `${course.CourseNumber}`;
+    courseDuration.textContent = `${course.CourseDuration}`;
+    teachingMethod.textContent = `${course.TeachingMethod}`;
+    courseStart.textContent =`${course.StartDate}`;
+
+    courseCard.appendChild(courseTitle);
+    courseCard.appendChild(courseNumber);
+    courseCard.appendChild(courseDuration);
+    courseCard.appendChild(teachingMethod);
+    courseCard.appendChild(courseStart);
+    
+
+    document.querySelector("#single-course").appendChild(courseCard);
+}
+
+export { displayCourses, singleCourseData};
 
 
 

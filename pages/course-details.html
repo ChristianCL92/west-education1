@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../content/css/base.css">
     <link rel="stylesheet" href="/content/css/course-details.css">
     <title>Course-details</title>
-    <script src="/scripts/course-details.js"></script>
+    <script type="module" src="/scripts/course-details.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -19,8 +19,14 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Course Details</h1>
+        <section class="course-container">
+            <div id="single-course">
+                <h1>Course Details</h1>
+            </div>
+            
+            <!-- <h2 id="course-title"></h2> -->
+            
+            
         </section>
     </main>
 </body>
