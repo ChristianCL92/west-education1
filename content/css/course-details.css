@@ -1,4 +1,24 @@
-h1 {
+.course-container {
     padding-top: 120px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #070606;
+    width: 50%;
 }
+
+p {
+    font-size: larger;
+    
+}
+
+.btn-more {
+    color: floralwhite;
+    background-color: #00c9a5;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+

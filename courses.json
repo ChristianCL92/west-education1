@@ -2,164 +2,100 @@
   "courses": [
     {
       "id": 1,
-
       "CourseTitle": "JavaScript",
-
       "CourseNumber": "2401",
-
       "CourseDuration": "4 weeks",
-
       "TeachingMethod": "Online",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course1.webp",
-
       "Rating": 4.6
     },
-
     {
       "id": 2,
-
       "CourseTitle": "Solidity and Blockchain Development",
-
       "CourseNumber": "2402",
-
       "CourseDuration": "6 weeks",
-
       "TeachingMethod": "In-person",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course2.webp",
-
       "Rating": 4.7
     },
-
     {
       "id": 3,
-
       "CourseTitle": "Rust Programming",
-
       "CourseNumber": "2403",
-
       "CourseDuration": "3 weeks",
-
       "TeachingMethod": "Online",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course3.webp",
-
       "Rating": 4.7
     },
-
     {
       "id": 4,
-
       "CourseTitle": "Information Technology",
-
       "CourseNumber": "2404",
-
       "CourseDuration": "8 weeks",
-
       "TeachingMethod": "In-person",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course4.webp",
-
       "Rating": 4.5
     },
-
     {
       "id": 5,
-
       "CourseTitle": "Systems Science",
-
       "CourseNumber": "2405",
-
       "CourseDuration": "three weeks",
-
       "TeachingMethod": "Online",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course5.webp",
-
       "Rating": 4.5
     },
-
     {
       "id": 6,
-
       "CourseTitle": "Network and Systems Administration",
-
       "CourseNumber": "2406",
-
       "CourseDuration": "7 weeks",
-
       "TeachingMethod": "In-person",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course6.webp",
-
       "Rating": 4.6
     },
-
     {
       "id": 7,
-
       "CourseTitle": "Cybersecurity",
-
       "CourseNumber": "2407",
-
       "CourseDuration": "6 weeks",
-
       "TeachingMethod": "Online",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course7.webp",
-
       "Rating": 4.6
     },
-
     {
       "id": 8,
-
       "CourseTitle": "Data Analysis",
-
       "CourseNumber": "2408",
-
       "CourseDuration": "5 weeks",
-
       "TeachingMethod": "In-person",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course8.webp",
-
       "Rating": 4.8
     },
-
     {
       "id": 9,
-
       "CourseTitle": "Cloud Services and Cloud Computing",
-
       "CourseNumber": "2409",
-
       "CourseDuration": "4 weeks",
-
       "TeachingMethod": "In-person",
-
       "StartDate": "2024-09-01",
-
       "imageUrl": "course9.webp",
-
       "Rating": 4.6
+    },
+    {
+      "CourseTitle": "Javascript - Advanced",
+      "CourseNunber": "2410",
+      "CourseDuration": "8 Weeks",
+      "CourseCost": "120 USD",
+      "id": 10
     }
   ]
 }

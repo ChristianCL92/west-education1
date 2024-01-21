@@ -42,20 +42,21 @@ function singleCourseData (course) {
     const courseDuration = document.createElement("p");
     const teachingMethod = document.createElement("p");
     const courseStart = document.createElement("p");
+    const enrollCourse = openSingleCourseHandler(course.id)
 
     courseTitle.textContent = `${course.CourseTitle}`;
-    courseNumber.textContent = `${course.CourseNumber}`;
-    courseDuration.textContent = `${course.CourseDuration}`;
-    teachingMethod.textContent = `${course.TeachingMethod}`;
-    courseStart.textContent =`${course.StartDate}`;
+    courseNumber.textContent = `Course Number: ${course.CourseNumber}`;
+    courseDuration.textContent = `Duration: ${course.CourseDuration}`;
+    teachingMethod.textContent = `Teaching Method:${course.TeachingMethod}`;
+    courseStart.textContent =`Start:${course.StartDate}`;
 
     courseCard.appendChild(courseTitle);
     courseCard.appendChild(courseNumber);
     courseCard.appendChild(courseDuration);
     courseCard.appendChild(teachingMethod);
     courseCard.appendChild(courseStart);
+    courseCard.appendChild(enrollCourse);
     
-
     document.querySelector("#single-course").appendChild(courseCard);
 }
 
