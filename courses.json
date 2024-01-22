@@ -90,7 +90,6 @@
       "imageUrl": "course9.webp",
       "Rating": 4.6
     }
-    
   ],
   "newCourses": [
     {
@@ -99,6 +98,16 @@
       "CourseDuration": "8 Weeks",
       "CourseCost": "120 USD",
       "id": 10
+    }
+  ],
+  "studentRegister": [
+    {
+      "studentName": "Christian",
+      "billAdress": "streetone",
+      "mobileNumber": "mobileValue123",
+      "email": "emailValue1@outlook.com",
+      "password": "secret",
+      "id": 11
     }
   ]
 }

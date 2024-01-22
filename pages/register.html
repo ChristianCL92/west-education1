@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/content/css/base.css">
     <link rel="stylesheet" href="/content/css/register.css">
+    <script src="/scripts/utility-form.js" defer></script>
 </head>
 <body>
  <header class="header">
@@ -20,47 +21,20 @@
     <main>
         <section class="registration-form">
             <h2>Register Now</h2>
-            <form action="#">
+            <form id="sendForm">
                 <p>Full Name:</p>
-                <input type="text" name="fullname" placeholder="Full Name" required >
+                <input type="text" id="student" name="name" placeholder="Full Name" value="Student" required >
                 <p>Billing Address:</p>
-                <input type="text" name="billing-address" placeholder="Billing Address" required>
+                <input type="text" id="billing" name="billingAdress" placeholder="Billing Address" value="myaddress123" required>
                 <p>Email:</p>
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="email" id="email" name="email" placeholder="Email" value="emailValue@outlook.com" required>
                 <p>Mobile Number:</p>
-                <input type="text" name="mobile-number" placeholder="Mobile number" required>
+                <input type="text" id="mobile" name="mobileNumber" placeholder="Mobile number" value="12345678" required>
                 <p>Password:</p>
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" id="password" name="password" placeholder="Password" value="verysecret123" required>
                 <button type="submit">Register</button>
             </form>
         </section>
-        <!-- <section class="register-form">
-            <form action="">
-                <div class="form-details">
-                    <label for="firstName">Firstname:</label>
-                    <input type="text" name="name" id="firstName">
-                </div>
-                <div class="form-details">
-                    <label for="lastName">Lastname:</label>
-                    <input type="text" name="lastName" id="lastName">
-                </div>
-                 <div class="form-details">
-                    <label for="billing-details">Billing Details:</label>
-                    <input type="text" name="billing-details" id="billing-details">
-                </div>
-                 <div class="form-details">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                 <div class="form-details">
-                    <label for="mobile">Mobile Number:</label>
-                    <input type="number" name="mobile" id="mobile">
-                </div>
-                <div class="form-details">
-                    <button>Register</button>
-                </div>
-            </form>
-        </section> -->
     </main>
 </body>
 </html>
