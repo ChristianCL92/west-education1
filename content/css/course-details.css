@@ -1,10 +1,16 @@
+main {
+    padding-top: 150px;
+}
+
 .course-container {
-    padding-top: 120px;
+    position: fixed;
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
     border: 1px solid #070606;
-    width: 50%;
+    width: 70%;
+    left: 10%;
+    border-radius: 0.3rem;
 }
 
 p {

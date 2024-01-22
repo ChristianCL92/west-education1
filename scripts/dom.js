@@ -53,6 +53,7 @@ function openSingleCourseHandler (courseId) {
 
 function singleCourseData (course) {
     const courseCard = document.createElement("div");
+    courseCard.classList.add("course-data");
     
   /*    if(course.imageUrl) {
     const courseImage = createImage(course.imageUrl);
