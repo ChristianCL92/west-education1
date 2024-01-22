@@ -1,6 +1,7 @@
 main {
-    padding-top: 150px;
+    padding-top: 120px;
 }
+
 
 .course-container {
     position: fixed;
@@ -8,9 +9,25 @@ main {
     justify-content: center;
     background-color: #f9f9f9;
     border: 1px solid #070606;
-    width: 70%;
-    left: 10%;
-    border-radius: 0.3rem;
+    width: 50%;
+    left: 22%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+     text-align: center;
+     box-shadow: #070606;
+}
+
+.course-container h1 {
+    font-size: 3rem;
+}
+
+.course-data img {
+    width: 60%;
+    height: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
 }
 
 p {
@@ -21,10 +38,34 @@ p {
 .btn-more {
     color: floralwhite;
     background-color: #00c9a5;
-    padding: 0.3rem 0.6rem;
+    padding: 1rem 1.7rem;
     border-radius: 0.2rem;
     cursor: pointer;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-weight: bold;
+}
+
+@media (max-width:600px) {
+  .course-container {
+    width:90%;
+    left: 5%;
+  }
+
+  .course-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .course-data img {
+    width: 80%;
+  }
+
+  p {
+    font-size:larger;
+  }
+  
+  .btn-more {
+    padding: 0.5rem 1.2rem;
+  }
+    
 }
 

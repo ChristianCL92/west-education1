@@ -21,12 +21,14 @@ function displayCourses (course) {
     return card;  
 }
 
-/* function createImage (imageUrl) {
+ function createImage (imageUrl) {
     const image = document.createElement("img");
-    image.setAttribute('src', `/content/images/${imageUrl}`);
+    image.classList.add("img-container");
+    image.setAttribute('src', `../content/images/${imageUrl}`);
+    
 
-    return createImage;
-}  */
+    return image;
+}  
 
 function openSingleCourseHandler (courseId) {
 
@@ -55,10 +57,10 @@ function singleCourseData (course) {
     const courseCard = document.createElement("div");
     courseCard.classList.add("course-data");
     
-  /*    if(course.imageUrl) {
+      if(course.imageUrl) {
     const courseImage = createImage(course.imageUrl);
     courseCard.appendChild(courseImage);
-    }  */
+    }  
     const courseTitle = document.createElement("h1");
     const courseNumber = document.createElement("p");
     const courseDuration = document.createElement("p");
