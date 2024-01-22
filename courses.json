@@ -89,7 +89,10 @@
       "StartDate": "2024-09-01",
       "imageUrl": "course9.webp",
       "Rating": 4.6
-    },
+    }
+    
+  ],
+  "newCourses": [
     {
       "CourseTitle": "Javascript - Advanced",
       "CourseNunber": "2410",

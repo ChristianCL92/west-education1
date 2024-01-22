@@ -11,7 +11,7 @@ async function displaySingleCourse () {
 
     const course = await http.get();
      singleCourseData(course);
-
+     
   } catch (error) {
     console.log("error displaying the course information", error);
   }

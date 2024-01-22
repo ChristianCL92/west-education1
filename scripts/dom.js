@@ -21,22 +21,43 @@ function displayCourses (course) {
     return card;  
 }
 
+/* function createImage (imageUrl) {
+    const image = document.createElement("img");
+    image.setAttribute('src', `/content/images/${imageUrl}`);
+
+    return createImage;
+}  */
 
 function openSingleCourseHandler (courseId) {
 
     const button = document.createElement('button');
     button.classList.add('btn-more');
-    button.textContent = 'Read More';
 
-    button.addEventListener("click", () => {
-        location.href = `course-details.html?id=${courseId}`
-    })
+    if (location.href.includes("course-details.html")) {
+        button.textContent = "Enroll Now";
+        button.addEventListener("click", () => {
+            location.href = "../pages/register.html";
+        })
+    } else {
+        button.textContent = 'Read More';
+
+         button.addEventListener('click', () => {
+           location.href = `course-details.html?id=${courseId}`;
+         });
+        
+    }
+    
+   
     return button;
 }
 
 function singleCourseData (course) {
     const courseCard = document.createElement("div");
-
+    
+  /*    if(course.imageUrl) {
+    const courseImage = createImage(course.imageUrl);
+    courseCard.appendChild(courseImage);
+    }  */
     const courseTitle = document.createElement("h1");
     const courseNumber = document.createElement("p");
     const courseDuration = document.createElement("p");

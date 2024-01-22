@@ -20,7 +20,7 @@ async function addNewCourseHandler (e) {
 }
 
 async function addNewCourse (course) {
-    const url = 'http://localhost:3000/courses';7
+    const url = 'http://localhost:3000/newCourses';
 
     try {
 
