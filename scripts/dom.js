@@ -2,13 +2,15 @@ function displayCourses (course) {
     const card = document.createElement("div");
     card.classList.add("course-card");
 
-    const paragraphElement = document.createElement("p");
-    paragraphElement.textContent = `ID: ${course.id}`;
-    
-    card.appendChild(paragraphElement);
+    if(isPopularCourse(course.CourseTitle)) {
+        const popularCourses =document.createElement("p");
+        popularCourses.classList.add("popular-courses");
+        popularCourses.textContent = "Popular";
+        card.appendChild(popularCourses);
+    }
 
     const courseTitle = document.createElement("h3");
-    courseTitle.textContent = `Course: ${course.CourseTitle}`;
+    courseTitle.textContent = `${course.CourseTitle}`;
     card.appendChild(courseTitle);
 
     const courseDuration = document.createElement("h4");
@@ -26,9 +28,13 @@ function displayCourses (course) {
     image.classList.add("img-container");
     image.setAttribute('src', `../content/images/${imageUrl}`);
     
-
     return image;
 }  
+
+function isPopularCourse (course) {
+    const popularCourses = ["JavaScript", "Cybersecurity", "Data Analysis"];
+    return popularCourses.includes(course);
+}
 
 function openSingleCourseHandler (courseId) {
 
@@ -49,7 +55,6 @@ function openSingleCourseHandler (courseId) {
         
     }
     
-   
     return button;
 }
 

@@ -5,7 +5,7 @@
       "CourseTitle": "JavaScript",
       "CourseNumber": "2401",
       "CourseDuration": "4 weeks",
-      "TeachingMethod": "Online",
+      "TeachingMethod": "Distance",
       "StartDate": "2024-09-01",
       "imageUrl": "course1.webp",
       "Rating": 4.6
@@ -15,7 +15,7 @@
       "CourseTitle": "Solidity and Blockchain Development",
       "CourseNumber": "2402",
       "CourseDuration": "6 weeks",
-      "TeachingMethod": "In-person",
+      "TeachingMethod": "Classroom",
       "StartDate": "2024-09-01",
       "imageUrl": "course2.webp",
       "Rating": 4.7
@@ -25,7 +25,7 @@
       "CourseTitle": "Rust Programming",
       "CourseNumber": "2403",
       "CourseDuration": "3 weeks",
-      "TeachingMethod": "Online",
+      "TeachingMethod": "Distance",
       "StartDate": "2024-09-01",
       "imageUrl": "course3.webp",
       "Rating": 4.7
@@ -35,7 +35,7 @@
       "CourseTitle": "Information Technology",
       "CourseNumber": "2404",
       "CourseDuration": "8 weeks",
-      "TeachingMethod": "In-person",
+      "TeachingMethod": "Classroom",
       "StartDate": "2024-09-01",
       "imageUrl": "course4.webp",
       "Rating": 4.5
@@ -45,7 +45,7 @@
       "CourseTitle": "Systems Science",
       "CourseNumber": "2405",
       "CourseDuration": "3 weeks",
-      "TeachingMethod": "Online",
+      "TeachingMethod": "Distance",
       "StartDate": "2024-09-01",
       "imageUrl": "course5.webp",
       "Rating": 4.5
@@ -55,7 +55,7 @@
       "CourseTitle": "Network and Systems Administration",
       "CourseNumber": "2406",
       "CourseDuration": "7 weeks",
-      "TeachingMethod": "In-person",
+      "TeachingMethod": "Classroom",
       "StartDate": "2024-09-01",
       "imageUrl": "course6.webp",
       "Rating": 4.6
@@ -65,7 +65,7 @@
       "CourseTitle": "Cybersecurity",
       "CourseNumber": "2407",
       "CourseDuration": "6 weeks",
-      "TeachingMethod": "Online",
+      "TeachingMethod": "Distance",
       "StartDate": "2024-09-01",
       "imageUrl": "course7.webp",
       "Rating": 4.6
@@ -75,7 +75,7 @@
       "CourseTitle": "Data Analysis",
       "CourseNumber": "2408",
       "CourseDuration": "5 weeks",
-      "TeachingMethod": "In-person",
+      "TeachingMethod": "Classroom",
       "StartDate": "2024-09-01",
       "imageUrl": "course8.webp",
       "Rating": 4.8
@@ -85,7 +85,7 @@
       "CourseTitle": "Cloud Services and Cloud Computing",
       "CourseNumber": "2409",
       "CourseDuration": "4 weeks",
-      "TeachingMethod": "In-person",
+      "TeachingMethod": "Classroom",
       "StartDate": "2024-09-01",
       "imageUrl": "course9.webp",
       "Rating": 4.6
