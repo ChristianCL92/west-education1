@@ -122,6 +122,46 @@
       "email": "emailValue1@outlook.com",
       "password": "secret",
       "id": 11
+    },
+    {
+      "studentName": "Student",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "id": 12
+    },
+    {
+      "studentName": "Student",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "id": 13
+    }
+  ],
+  "courseStudents": [
+    {
+      "CourseTitle": "Python",
+      "students": [
+        {
+          "studentName": "Christian"
+        },
+        {
+          "studentName": "Kalle"
+        }
+      ]
+    },
+    {
+      "CourseTitle": "JavaScript",
+      "students": [
+        {
+          "studentName": "Christian"
+        },
+        {
+          "studentName": "MIKE"
+        }
+      ]
     }
   ]
 }

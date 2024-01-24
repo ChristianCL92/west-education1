@@ -17,7 +17,7 @@ function displayCourses (course) {
     courseDuration.textContent = `Course Duration:${course.CourseDuration}`;
     card.appendChild(courseDuration);
 
-    const readMoreBtn = openSingleCourseHandler(course.id)
+    const readMoreBtn = openSingleCourseHandler(course)
     card.appendChild(readMoreBtn);
 
     return card;  
@@ -36,7 +36,7 @@ function isPopularCourse (course) {
     return popularCourses.includes(course);
 }
 
-function openSingleCourseHandler (courseId) {
+function openSingleCourseHandler (course) {
 
     const button = document.createElement('button');
     button.classList.add('btn-more');
@@ -44,13 +44,14 @@ function openSingleCourseHandler (courseId) {
     if (location.href.includes("course-details.html")) {
         button.textContent = "Enroll Now";
         button.addEventListener("click", () => {
+            localStorage.setItem("selectedCourseTitle", course.CourseTitle)
             location.href = "../pages/register.html";
         })
     } else {
         button.textContent = 'Read More';
 
          button.addEventListener('click', () => {
-           location.href = `course-details.html?id=${courseId}`;
+           location.href = `course-details.html?id=${course.id}`;
          });
         
     }
@@ -71,7 +72,7 @@ function singleCourseData (course) {
     const courseDuration = document.createElement("p");
     const teachingMethod = document.createElement("p");
     const courseStart = document.createElement("p");
-    const enrollCourse = openSingleCourseHandler(course.id)
+    const enrollCourse = openSingleCourseHandler(course)
 
     courseTitle.textContent = `${course.CourseTitle}`;
     courseNumber.textContent = `Course Number: ${course.CourseNumber}`;

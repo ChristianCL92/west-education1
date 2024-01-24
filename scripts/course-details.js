@@ -1,5 +1,6 @@
 import HttpClient from './http.js';
-import { singleCourseData } from './dom.js';
+import { singleCourseData} from './dom.js';
+
 
 async function displaySingleCourse () {
   
@@ -17,5 +18,6 @@ async function displaySingleCourse () {
   }
 
 };
+
 
 document.addEventListener("DOMContentLoaded", displaySingleCourse)
