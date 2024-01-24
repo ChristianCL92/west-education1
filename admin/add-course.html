@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/content/css/base.css">
+    <link rel="stylesheet" href="/content/css/add-course.css">
+    <script src="/scripts/add-course.js" defer></script>
+</head>
+<body>
+     <header class="header">
+        <a href="" class="logo"><img src="../content/images/westcoast-education.png" alt="westcoast-logo"></a>
+        <nav class="navbar">
+            <a href="/index.html">Start</a>
+            <a href="/pages/all-courses.html">Popular Courses</a>
+            <a href="/pages/register.html">Sign In</a>
+            <a href="/pages/register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+    <section class="registration-form">
+        <h2>Add New Course</h2>
+          <form id="addCourseForm">
+    <p>Course Details:</p>
+    <input type="text" id="courseTitle" name="courseTitle" placeholder="Course Title" required>
+    <p>Course Number:</p>
+    <input type="text" id="courseNumber" name="courseNumber" placeholder="Course Number" required>
+    <p>Course Duration:</p>
+    <input type="text" id="courseDate" name="courseDuration" placeholder="CourseDuration" required>
+    <p>Course Cost:</p>
+    <input type="text" id="courseCost" name="courseCost" placeholder="Course Cost" required>
+    <button type="submit">Add Course</button>
+        </form>
+    </section>
+    </main>
+</body>
+</html>

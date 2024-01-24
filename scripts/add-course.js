@@ -1,4 +1,4 @@
-const addCoursebtn = document.querySelector("#addUser")
+/* const addCoursebtn = document.querySelector("#addUser")
 
 async function initApp () {
 
@@ -17,7 +17,26 @@ async function addNewCourseHandler (e) {
    console.log(addedCourse);
 
 
-}
+} */
+
+const form = document.querySelector("#addCourseForm");
+
+form.addEventListener("submit", async (e) =>{
+  e.preventDefault();
+  
+  const formData = {
+    CourseTitle: document.querySelector("#courseTitle").value,
+    CourseNunber: document.querySelector("#courseNumber").value,
+    CourseDuration: document.querySelector("#courseDate").value,
+    CourseCost: document.querySelector("#courseCost").value
+  };
+
+    await addNewCourse(formData)
+});
+
+
+
+
 
 async function addNewCourse (course) {
     const url = 'http://localhost:3000/newCourses';
@@ -47,4 +66,4 @@ async function addNewCourse (course) {
 }
 
 document.addEventListener("DOMContentLoaded", initApp);
-addCoursebtn.addEventListener('click', addNewCourseHandler);
+/* addCoursebtn.addEventListener('click', addNewCourseHandler); */
