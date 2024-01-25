@@ -12,12 +12,14 @@ function initApp () {
 function formHandler (e) {
 e.preventDefault();
 
+const selectedCourseTitle = localStorage.getItem("selectedCourseTitle");
 const formData = {
 studentName : nameInput.value,
 billAdress: billingInput.value,
 mobileNumber: mobileInput.value,
 email: emailInput.value,
 password: passwordInput.value,
+...(selectedCourseTitle && {courseTitle: selectedCourseTitle})
 
 }
  formSubmitData(formData);
@@ -25,7 +27,16 @@ password: passwordInput.value,
 }
 
 async function formSubmitData (formData) {
-    const url = 'http://localhost:3000/studentRegister';
+
+    let url;
+    /* const url = 'http://localhost:3000/studentRegister'; */
+
+    if(formData.courseTitle){
+        url = 'http://localhost:3000/courseStudents';
+        return await enrollStudent(formData)
+    } else {
+        url = 'http://localhost:3000/studentRegister';
+    }
 
     try {
      const response = await fetch(url, {
@@ -37,10 +48,10 @@ async function formSubmitData (formData) {
      });
 
      if(response.ok) {
-        const newStudent = await response.JSON();
+        const newStudent = await response.json();
         return newStudent;
      } else {
-        console.log("Form not successfull");
+        console.log("Form submission not successfull");
      }
         
     } catch (error) {
@@ -48,6 +59,33 @@ async function formSubmitData (formData) {
     }
 
 }
+
+async function enrollStudent(studentData) {
+  const url = 'http://localhost:3000/courseStudents';
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+
+      body: JSON.stringify(studentData),
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      localStorage.removeItem('selectedCourseTitle');
+      return result;
+      
+    } else {
+      console.log('Error in student enrollment');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 
 document.addEventListener("DOMContentLoaded", initApp)
 form.addEventListener("submit", formHandler);
