@@ -122,35 +122,105 @@
       "email": "emailValue1@outlook.com",
       "password": "secret",
       "id": 13
+    },
+    {
+      "studentName": "kalleboy",
+      "billAdress": "kallevägen12",
+      "mobileNumber": "3434343434",
+      "email": "kalle@hotmail.com",
+      "password": "kalleärbäsrt",
+      "id": 14
+    },
+    {
+      "studentName": "Samuel",
+      "billAdress": "gatan1234",
+      "mobileNumber": "07023453456",
+      "email": "studentSamuel@yahoo.se",
+      "password": "sdfkjhadd",
+      "id": 15
     }
   ],
   "courseStudents": [
     {
-      "CoureTitle": "Javascript",
-      "studentName": "Student1",
-      "billAdress": "myaddress123",
-      "mobileNumber": "12345678",
-      "email": "emailValue@outlook.com",
-      "password": "verysecret123",
+      "studentName": "David",
+      "billAdress": "address1234",
+      "mobileNumber": "0700000000",
+      "email": "myemail@outlook.com",
+      "password": "mypassworddfgs",
+      "courseTitle": "Data Analysis",
       "id": 17
     },
     {
-      "studentName": "Student",
-      "billAdress": "myaddress123",
-      "mobileNumber": "12345678",
-      "email": "emailValue@outlook.com",
-      "password": "verysecret123",
-      "courseTitle": "Information Technology",
+      "studentName": "Jack",
+      "billAdress": "Jasdfsdf12",
+      "mobileNumber": "67123498",
+      "email": "Jackstudent@outlook.com",
+      "password": "password234534",
+      "courseTitle": "Network and Systems Administration",
       "id": 18
     },
     {
-      "studentName": "Student",
+      "studentName": "Jessie",
       "billAdress": "myaddress123",
-      "mobileNumber": "12345678",
-      "email": "emailValue@outlook.com",
-      "password": "verysecret123",
-      "courseTitle": "Rust Programming",
+      "mobileNumber": "07011111111",
+      "email": "studentJessie@outlook.com",
+      "password": "asdfgDom",
+      "courseTitle": "Systems Science",
       "id": 19
+    },
+    {
+      "studentName": "Mike",
+      "billAdress": "citystreet34",
+      "mobileNumber": "0761233327",
+      "email": "studentMike@outlook.com",
+      "password": "mypqaword",
+      "courseTitle": "JavaScript",
+      "id": 20
+    },
+    {
+      "studentName": "Sara",
+      "billAdress": "addressnew34",
+      "mobileNumber": "07687234332",
+      "email": "studentSara@yahoo.com",
+      "password": "scsdfdsfgr",
+      "courseTitle": "JavaScript",
+      "id": 21
+    },
+    {
+      "studentName": "Derek",
+      "billAdress": "mystreet123",
+      "mobileNumber": "0768934563",
+      "email": "studentDerek@outlook.com",
+      "password": "123456fyy",
+      "courseTitle": "Rust Programming",
+      "id": 22
+    },
+    {
+      "studentName": "Patricia",
+      "billAdress": "myaddress123",
+      "mobileNumber": "45454545",
+      "email": "studentPatricia@outlook.com",
+      "password": "passwor56",
+      "courseTitle": "Cloud Services and Cloud Computing",
+      "id": 23
+    },
+    {
+      "studentName": "Christofer",
+      "billAdress": "adressne4567",
+      "mobileNumber": "0708888888",
+      "email": "studentChristofer@hotmail.com",
+      "password": "passwordme1",
+      "courseTitle": "Solidity and Blockchain Development",
+      "id": 24
+    },
+    {
+      "studentName": "Niklas",
+      "billAdress": "strandvägen12",
+      "mobileNumber": "0706767635",
+      "email": "studentNiklas@yahoo.se",
+      "password": "asdffgg",
+      "courseTitle": "Rust Programming",
+      "id": 25
     }
   ]
 }

@@ -90,7 +90,27 @@ function singleCourseData (course) {
     document.querySelector("#single-course").appendChild(courseCard);
 }
 
-export { displayCourses, singleCourseData};
+function studentEnrollmentDOM(course, students) {
+  const enrollmentDiv = document.querySelector('#enrollment-details');
+  const courseElementHeader = document.createElement('div');
+  courseElementHeader.classList.add("course-container");
+
+  courseElementHeader.innerHTML = `<h3>${course}</h3>`;
+  
+
+  const studentList = document.createElement('span');
+
+  students.forEach((student) => {
+    const studentItem = document.createElement('p');
+    studentItem.textContent = `Student name: ${student}`;
+    studentList.appendChild(studentItem);
+  });
+  courseElementHeader.appendChild(studentList);
+  enrollmentDiv.appendChild(courseElementHeader);
+} 
+
+
+export { displayCourses, singleCourseData, studentEnrollmentDOM};
 
 
 

@@ -29,8 +29,7 @@ password: passwordInput.value,
 async function formSubmitData (formData) {
 
     let url;
-    /* const url = 'http://localhost:3000/studentRegister'; */
-
+    
     if(formData.courseTitle){
         url = 'http://localhost:3000/courseStudents';
         return await enrollStudent(formData)
