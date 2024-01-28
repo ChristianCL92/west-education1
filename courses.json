@@ -91,20 +91,22 @@
       "Rating": 4.6
     },
     {
-      "CourseTitle": "Python - Beginner",
+      "CourseTitle": "Python - Profesional",
       "CourseNumber": "2410",
-      "CourseDuration": "6 weeks",
-      "CourseCost": "150 USD",
+      "CourseDuration": "10 weeks",
+      "CourseCost": "155 USD",
+      "TeachingMethod": "Distance",
+      "StartDate": "2024-09-01",
       "id": 10
-    }
-  ],
-  "newCourses": [
+    },
     {
-      "CourseTitle": "Javascript - Advanced",
+      "CourseTitle": "C++",
       "CourseNumber": "2411",
-      "CourseDuration": "8 Weeks",
-      "CourseCost": "120 USD",
-      "id": 10
+      "CourseDuration": "10 weeks",
+      "CourseCost": "150 USD",
+      "TeachingMethod": "Distance",
+      "StartDate": "2024-09-01",
+      "id": 11
     }
   ],
   "studentRegister": [
@@ -250,6 +252,33 @@
       "password": "verysecret123",
       "courseTitle": "JavaScript",
       "id": 29
+    },
+    {
+      "studentName": "Madeleine",
+      "billAdress": "myaddress123",
+      "mobileNumber": "0705633423",
+      "email": "studentMadeleine@outlook.com",
+      "password": "898922g",
+      "courseTitle": "JavaScript",
+      "id": 30
+    },
+    {
+      "studentName": "Carl",
+      "billAdress": "myaddress123",
+      "mobileNumber": "0700000005",
+      "email": "emailValue@outlook.com",
+      "password": "liuglihuk",
+      "courseTitle": "C++",
+      "id": 31
+    },
+    {
+      "studentName": "Robert",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "Rust Programming",
+      "id": 32
     }
   ]
 }

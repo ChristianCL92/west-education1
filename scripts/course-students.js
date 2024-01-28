@@ -44,22 +44,6 @@ function getUniqueCourses(courseStudents) {
   return [...new Set(courseTitles)]; 
 }
 
-
-
-/* function displayCourseEnrollment(courseStudents) {
-  const enrollmentDetails = courseStudents.reduce((acc, student) => {
-    if (!acc[student.courseTitle]) {
-      acc[student.courseTitle] = [];
-    }
-    acc[student.courseTitle].push(student.studentName);
-    return acc;
-  }, {});
-
-  for (const [course, students] of Object.entries(enrollmentDetails)) {
-    studentEnrollmentDOM(course, students);
-  }
-} */
-
 document.addEventListener("DOMContentLoaded", fetchCourseEnrollment)
 
 

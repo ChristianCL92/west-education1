@@ -10,7 +10,7 @@ export default class HttpClient {
       const response = await fetch(this.#url);
 
       if (response.ok) {
-        const result = await response.json(); /* console.log(response); */
+        const result = await response.json(); 
 
         return result;
       } else {
@@ -33,11 +33,11 @@ try{
       body: JSON.stringify(courseData),
     });
 
-  if (response.ok) {
+    if (response.ok) {
     const result = await response.json();
     return result
-} else {
-  throw new Error(`${response.status} ${response.statusText}`);
+}   else {
+    throw new Error(`${response.status} ${response.statusText}`);
 } 
 
 } catch(error) {
