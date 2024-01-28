@@ -1,69 +1,25 @@
-/* const addCoursebtn = document.querySelector("#addUser")
 
-async function initApp () {
-
-}
-
-async function addNewCourseHandler (e) {
-    e.preventDefault();
-    const course = {
-        CourseTitle: "Javascript - Advanced",
-        CourseNunber: "2410",
-        CourseDuration: "8 Weeks",
-        CourseCost: "120 USD"
-    };
-
-   const addedCourse = await addNewCourse(course);
-   console.log(addedCourse);
-
-
-} */
-
+import HttpClient from "./http.js";
 const form = document.querySelector("#addCourseForm");
 
 form.addEventListener("submit", async (e) =>{
   e.preventDefault();
   
-  const formData = {
+  const courseData = {
     CourseTitle: document.querySelector("#courseTitle").value,
-    CourseNunber: document.querySelector("#courseNumber").value,
+    CourseNumber: document.querySelector("#courseNumber").value,
     CourseDuration: document.querySelector("#courseDate").value,
     CourseCost: document.querySelector("#courseCost").value
   };
 
-    await addNewCourse(formData)
-});
-
-
-
-
-
-async function addNewCourse (course) {
-    const url = 'http://localhost:3000/newCourses';
-
     try {
-
-   const response = await fetch(url, {
-     method: 'POST',
-     headers: {
-       'Content-type': 'application/json',
-     },
-     body: JSON.stringify(course),
-   });
-
-   if (response.ok) {
-     const newCourse = await response.json();
-     return newCourse;
-   } else {
-    throw new Error (response.status, response.statusText);
-   }
-
+      const httpClient = new HttpClient('http://localhost:3000/courses');
+      const newCourse = await httpClient.add(courseData);
+      console.log('Course added:', newCourse);
+      // Handle success (e.g., clear the form, show a success message)
     } catch (error) {
-        console.log("Det gick inte bra!", error);
+      console.error('Failed to add course:', error);
+      // Handle error (e.g., show an error message)
     }
 
- 
-}
-
-document.addEventListener("DOMContentLoaded", initApp);
-/* addCoursebtn.addEventListener('click', addNewCourseHandler); */
+});

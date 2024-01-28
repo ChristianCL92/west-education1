@@ -89,29 +89,22 @@
       "StartDate": "2024-09-01",
       "imageUrl": "course9.webp",
       "Rating": 4.6
+    },
+    {
+      "CourseTitle": "Python - Beginner",
+      "CourseNumber": "2410",
+      "CourseDuration": "6 weeks",
+      "CourseCost": "150 USD",
+      "id": 10
     }
   ],
   "newCourses": [
     {
       "CourseTitle": "Javascript - Advanced",
-      "CourseNunber": "2410",
+      "CourseNumber": "2411",
       "CourseDuration": "8 Weeks",
       "CourseCost": "120 USD",
       "id": 10
-    },
-    {
-      "CourseTitle": "Javascript - Advanced",
-      "CourseNunber": "2410",
-      "CourseDuration": "8 Weeks",
-      "CourseCost": "120 USD",
-      "id": 11
-    },
-    {
-      "CourseTitle": "Python",
-      "CourseNunber": "2412",
-      "CourseDuration": "6 weeks",
-      "CourseCost": "120 usd",
-      "id": 12
     }
   ],
   "studentRegister": [
@@ -239,6 +232,24 @@
       "password": "keyworlkgdfgdf",
       "courseTitle": "Cybersecurity",
       "id": 27
+    },
+    {
+      "studentName": "Patrick",
+      "billAdress": "myaddress123",
+      "mobileNumber": "0704565666",
+      "email": "emailValue@outlook.com",
+      "password": "sgsgdfg",
+      "courseTitle": "Python - Beginner",
+      "id": 28
+    },
+    {
+      "studentName": "Jones",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "JavaScript",
+      "id": 29
     }
   ]
 }

@@ -25,6 +25,28 @@ async function fetchCourseEnrollment () {
 
 
 function displayCourseEnrollment(courseStudents) {
+  
+  let uniqueCourses = getUniqueCourses(courseStudents);
+
+  uniqueCourses.forEach((course) => {
+    let studentsInCourse = courseStudents.filter(
+      (student) => student.courseTitle === course
+    );
+    studentEnrollmentDOM(
+      course,
+      studentsInCourse.map((student) => student.studentName)
+    );
+  });
+}
+
+function getUniqueCourses(courseStudents) {
+  let courseTitles = courseStudents.map((student) => student.courseTitle);
+  return [...new Set(courseTitles)]; 
+}
+
+
+
+/* function displayCourseEnrollment(courseStudents) {
   const enrollmentDetails = courseStudents.reduce((acc, student) => {
     if (!acc[student.courseTitle]) {
       acc[student.courseTitle] = [];
@@ -36,7 +58,7 @@ function displayCourseEnrollment(courseStudents) {
   for (const [course, students] of Object.entries(enrollmentDetails)) {
     studentEnrollmentDOM(course, students);
   }
-}
+} */
 
 document.addEventListener("DOMContentLoaded", fetchCourseEnrollment)
 
