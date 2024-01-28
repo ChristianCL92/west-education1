@@ -92,6 +92,7 @@ function singleCourseData (course) {
 
 function studentEnrollmentDOM(course, students) {
   const enrollmentDiv = document.querySelector('#enrollment-details');
+  enrollmentDiv.classList.add("content-container");
   const courseElementHeader = document.createElement('div');
   courseElementHeader.classList.add("course-container");
 

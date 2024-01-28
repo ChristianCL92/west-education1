@@ -221,6 +221,24 @@
       "password": "asdffgg",
       "courseTitle": "Rust Programming",
       "id": 25
+    },
+    {
+      "studentName": "George",
+      "billAdress": "mystreet123",
+      "mobileNumber": "0708888884",
+      "email": "studentGeorge@outlook.com",
+      "password": "234565hg",
+      "courseTitle": "Cybersecurity",
+      "id": 26
+    },
+    {
+      "studentName": "Brian",
+      "billAdress": "streetincity9876",
+      "mobileNumber": "0705621223",
+      "email": "studentBrian@outlook.com",
+      "password": "keyworlkgdfgdf",
+      "courseTitle": "Cybersecurity",
+      "id": 27
     }
   ]
 }

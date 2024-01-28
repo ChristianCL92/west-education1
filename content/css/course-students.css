@@ -9,11 +9,24 @@
     
 }
 
+body {
+    background-color: #fff;
+}
+
 h1 {
     text-align: center;
 }
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .course-container {
-    border: 1px solid blue;
+    background-color: #aae2d8fb;
     margin-top: 2rem;
+    width: 70%;
+    border-radius: 0.2rem;
 }
