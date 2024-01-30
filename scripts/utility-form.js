@@ -1,13 +1,11 @@
+import HttpClient from "./http.js";
+
 const form = document.querySelector("#sendForm");
 const nameInput = document.querySelector("#student");
 const billingInput = document.querySelector("#billing");
 const mobileInput = document.querySelector("#mobile");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
-
-function initApp () {
-
-}
 
 function formHandler (e) {
 e.preventDefault();
@@ -27,64 +25,36 @@ password: passwordInput.value,
 }
 
 async function formSubmitData (formData) {
-
-    let url;
-    
-    if(formData.courseTitle){
-        url = 'http://localhost:3000/courseStudents';
-        return await enrollStudent(formData)
-    } else {
-        url = 'http://localhost:3000/studentRegister';
+  
+  try {
+    let result;
+    if(formData.courseTitle) {
+      result = await enrollStudent(formData);
+    } 
+    else {
+      const url = 'http://localhost:3000/studentRegister';
+      const httpClient = new HttpClient(url)
+      result = await httpClient.add(formData)
     }
-
-    try {
-     const response = await fetch(url, {
-        method : "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData)
-     });
-
-     if(response.ok) {
-        const newStudent = await response.json();
-        return newStudent;
-     } else {
-        console.log("Form submission not successfull");
-     }
-        
-    } catch (error) {
-        console.log("Form is not implemented correctly", error);
-    }
-
-}
+  } catch (error) {
+      console.log("Form submission error:", error);
+  }
+} 
 
 async function enrollStudent(studentData) {
   const url = 'http://localhost:3000/courseStudents';
 
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+   const httpClient = new HttpClient(url); 
 
-      body: JSON.stringify(studentData),
-    });
-
-    if (response.ok) {
-      const result = await response.json();
-      localStorage.removeItem('selectedCourseTitle');
-      return result;
-      
-    } else {
-      console.log('Error in student enrollment');
-    }
+   try {
+    const result = await httpClient.add(studentData);
+    localStorage.removeItem("selectedCourseTitle");
+    return result
+    
   } catch (error) {
-    console.log(error);
-  }
+    console.log("Error in student enrollment", error);
+  } 
+
 }
 
-
-document.addEventListener("DOMContentLoaded", initApp)
 form.addEventListener("submit", formHandler);

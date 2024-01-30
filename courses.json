@@ -1,7 +1,7 @@
 {
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "CourseTitle": "JavaScript",
       "CourseNumber": "2401",
       "CourseDuration": "4 weeks",
@@ -11,7 +11,7 @@
       "Rating": 4.6
     },
     {
-      "id": 2,
+      "id": "2",
       "CourseTitle": "Solidity and Blockchain Development",
       "CourseNumber": "2402",
       "CourseDuration": "6 weeks",
@@ -21,7 +21,7 @@
       "Rating": 4.7
     },
     {
-      "id": 3,
+      "id": "3",
       "CourseTitle": "Rust Programming",
       "CourseNumber": "2403",
       "CourseDuration": "3 weeks",
@@ -31,7 +31,7 @@
       "Rating": 4.7
     },
     {
-      "id": 4,
+      "id": "4",
       "CourseTitle": "Information Technology",
       "CourseNumber": "2404",
       "CourseDuration": "8 weeks",
@@ -41,7 +41,7 @@
       "Rating": 4.5
     },
     {
-      "id": 5,
+      "id": "5",
       "CourseTitle": "Systems Science",
       "CourseNumber": "2405",
       "CourseDuration": "3 weeks",
@@ -51,7 +51,7 @@
       "Rating": 4.5
     },
     {
-      "id": 6,
+      "id": "6",
       "CourseTitle": "Network and Systems Administration",
       "CourseNumber": "2406",
       "CourseDuration": "7 weeks",
@@ -61,7 +61,7 @@
       "Rating": 4.6
     },
     {
-      "id": 7,
+      "id": "7",
       "CourseTitle": "Cybersecurity",
       "CourseNumber": "2407",
       "CourseDuration": "6 weeks",
@@ -71,7 +71,7 @@
       "Rating": 4.6
     },
     {
-      "id": 8,
+      "id": "8",
       "CourseTitle": "Data Analysis",
       "CourseNumber": "2408",
       "CourseDuration": "5 weeks",
@@ -81,7 +81,7 @@
       "Rating": 4.8
     },
     {
-      "id": 9,
+      "id": "9",
       "CourseTitle": "Cloud Services and Cloud Computing",
       "CourseNumber": "2409",
       "CourseDuration": "4 weeks",
@@ -97,7 +97,7 @@
       "CourseCost": "155 USD",
       "TeachingMethod": "Distance",
       "StartDate": "2024-09-01",
-      "id": 10
+      "id": "10"
     },
     {
       "CourseTitle": "C++",
@@ -106,7 +106,16 @@
       "CourseCost": "150 USD",
       "TeachingMethod": "Distance",
       "StartDate": "2024-09-01",
-      "id": 11
+      "id": "11"
+    },
+    {
+      "id": "429a",
+      "CourseTitle": "Rust Programming - Advanced",
+      "CourseNumber": "2412",
+      "CourseDuration": "8 weeks",
+      "CourseCost": "95 USD",
+      "TeachingMethod": "Distance",
+      "StartDate": "2024-09-01"
     }
   ],
   "studentRegister": [
@@ -116,7 +125,7 @@
       "mobileNumber": "mobileValue123",
       "email": "emailValue1@outlook.com",
       "password": "secret",
-      "id": 13
+      "id": "13"
     },
     {
       "studentName": "kalleboy",
@@ -124,7 +133,7 @@
       "mobileNumber": "3434343434",
       "email": "kalle@hotmail.com",
       "password": "kalleärbäsrt",
-      "id": 14
+      "id": "14"
     },
     {
       "studentName": "Samuel",
@@ -132,7 +141,31 @@
       "mobileNumber": "07023453456",
       "email": "studentSamuel@yahoo.se",
       "password": "sdfkjhadd",
-      "id": 15
+      "id": "15"
+    },
+    {
+      "id": "f898",
+      "studentName": "newStudent4",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123"
+    },
+    {
+      "id": "3595",
+      "studentName": "newStudent5",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123"
+    },
+    {
+      "id": "1600",
+      "studentName": "Rolf",
+      "billAdress": "adress8989",
+      "mobileNumber": "0706778294",
+      "email": "studentRebecka@outlook.com",
+      "password": "verysecret123"
     }
   ],
   "courseStudents": [
@@ -143,7 +176,7 @@
       "email": "myemail@outlook.com",
       "password": "mypassworddfgs",
       "courseTitle": "Data Analysis",
-      "id": 17
+      "id": "17"
     },
     {
       "studentName": "Jack",
@@ -152,7 +185,7 @@
       "email": "Jackstudent@outlook.com",
       "password": "password234534",
       "courseTitle": "Network and Systems Administration",
-      "id": 18
+      "id": "18"
     },
     {
       "studentName": "Jessie",
@@ -161,7 +194,7 @@
       "email": "studentJessie@outlook.com",
       "password": "asdfgDom",
       "courseTitle": "Systems Science",
-      "id": 19
+      "id": "19"
     },
     {
       "studentName": "Mike",
@@ -170,7 +203,7 @@
       "email": "studentMike@outlook.com",
       "password": "mypqaword",
       "courseTitle": "JavaScript",
-      "id": 20
+      "id": "20"
     },
     {
       "studentName": "Sara",
@@ -179,7 +212,7 @@
       "email": "studentSara@yahoo.com",
       "password": "scsdfdsfgr",
       "courseTitle": "JavaScript",
-      "id": 21
+      "id": "21"
     },
     {
       "studentName": "Derek",
@@ -188,7 +221,7 @@
       "email": "studentDerek@outlook.com",
       "password": "123456fyy",
       "courseTitle": "Rust Programming",
-      "id": 22
+      "id": "22"
     },
     {
       "studentName": "Patricia",
@@ -197,7 +230,7 @@
       "email": "studentPatricia@outlook.com",
       "password": "passwor56",
       "courseTitle": "Cloud Services and Cloud Computing",
-      "id": 23
+      "id": "23"
     },
     {
       "studentName": "Christofer",
@@ -206,7 +239,7 @@
       "email": "studentChristofer@hotmail.com",
       "password": "passwordme1",
       "courseTitle": "Solidity and Blockchain Development",
-      "id": 24
+      "id": "24"
     },
     {
       "studentName": "Niklas",
@@ -215,7 +248,7 @@
       "email": "studentNiklas@yahoo.se",
       "password": "asdffgg",
       "courseTitle": "Rust Programming",
-      "id": 25
+      "id": "25"
     },
     {
       "studentName": "George",
@@ -224,7 +257,7 @@
       "email": "studentGeorge@outlook.com",
       "password": "234565hg",
       "courseTitle": "Cybersecurity",
-      "id": 26
+      "id": "26"
     },
     {
       "studentName": "Brian",
@@ -233,16 +266,7 @@
       "email": "studentBrian@outlook.com",
       "password": "keyworlkgdfgdf",
       "courseTitle": "Cybersecurity",
-      "id": 27
-    },
-    {
-      "studentName": "Patrick",
-      "billAdress": "myaddress123",
-      "mobileNumber": "0704565666",
-      "email": "emailValue@outlook.com",
-      "password": "sgsgdfg",
-      "courseTitle": "Python - Beginner",
-      "id": 28
+      "id": "27"
     },
     {
       "studentName": "Jones",
@@ -251,7 +275,7 @@
       "email": "emailValue@outlook.com",
       "password": "verysecret123",
       "courseTitle": "JavaScript",
-      "id": 29
+      "id": "28"
     },
     {
       "studentName": "Madeleine",
@@ -260,7 +284,7 @@
       "email": "studentMadeleine@outlook.com",
       "password": "898922g",
       "courseTitle": "JavaScript",
-      "id": 30
+      "id": "29"
     },
     {
       "studentName": "Carl",
@@ -269,7 +293,7 @@
       "email": "emailValue@outlook.com",
       "password": "liuglihuk",
       "courseTitle": "C++",
-      "id": 31
+      "id": "30"
     },
     {
       "studentName": "Robert",
@@ -278,7 +302,61 @@
       "email": "emailValue@outlook.com",
       "password": "verysecret123",
       "courseTitle": "Rust Programming",
-      "id": 32
+      "id": "31"
+    },
+    {
+      "id": "4695",
+      "studentName": "Claudia",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "C++"
+    },
+    {
+      "id": "9b86",
+      "studentName": "Pelle",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "Python - Profesional"
+    },
+    {
+      "id": "521b",
+      "studentName": "Inna",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "Information Technology"
+    },
+    {
+      "id": "0db3",
+      "studentName": "Chris",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "Solidity and Blockchain Development"
+    },
+    {
+      "id": "7227",
+      "studentName": "Aram",
+      "billAdress": "addressforstudent 12",
+      "mobileNumber": "0709999992",
+      "email": "studentAram@hotmail.com",
+      "password": "paddwodjdjd",
+      "courseTitle": "Rust Programming - Advanced"
+    },
+    {
+      "id": "3860",
+      "studentName": "Rebecka",
+      "billAdress": "adress8989",
+      "mobileNumber": "0706778294",
+      "email": "studentRebecka@outlook.com",
+      "password": "dfsgdsgrd",
+      "courseTitle": "Rust Programming - Advanced"
     }
   ]
 }
