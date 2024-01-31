@@ -128,7 +128,7 @@
       "id": "13"
     },
     {
-      "studentName": "kalleboy",
+      "studentName": "kalle",
       "billAdress": "kallevägen12",
       "mobileNumber": "3434343434",
       "email": "kalle@hotmail.com",
@@ -165,6 +165,14 @@
       "billAdress": "adress8989",
       "mobileNumber": "0706778294",
       "email": "studentRebecka@outlook.com",
+      "password": "verysecret123"
+    },
+    {
+      "id": "c37e",
+      "studentName": "testStudentRegister",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
       "password": "verysecret123"
     }
   ],
