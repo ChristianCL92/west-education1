@@ -1,28 +1,19 @@
  import { studentEnrollmentDOM } from './dom.js';
+ import HttpClient from './http.js';
 
 async function fetchCourseEnrollment () {
     
     const url = 'http://localhost:3000/courseStudents';
-
+    const https = new HttpClient(url);
     try {
-        const response = await fetch (url);
-        
-        
-        if(response.ok) {
 
-            const courseStudents = await response.json();
-            displayCourseEnrollment(courseStudents);
-
-            
-        } else {
-           throw new Error(`${response.status}${response.statusText}`);
-        }
+        const courseStudents = await https.get();
+        displayCourseEnrollment(courseStudents);
         
     } catch (error) {
         console.log("Could not fetch course students!", error);
     }
 }
-
 
 function displayCourseEnrollment(courseStudents) {
   

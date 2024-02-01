@@ -6,7 +6,6 @@ async function getDataAndDisplay() {
   const http = new HttpClient(url);
   try {
     const courses = await http.get();
-    console.log(courses);
     courses.forEach((course)=> {
       const courseElement = displayCourses(course);
       document.getElementById('Our-Courses').appendChild(courseElement);
