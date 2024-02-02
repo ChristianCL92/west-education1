@@ -116,6 +116,15 @@
       "CourseCost": "95 USD",
       "TeachingMethod": "Distance",
       "StartDate": "2024-09-01"
+    },
+    {
+      "CourseTitle": "TypeScript",
+      "CourseNumber": "2413",
+      "CourseDuration": "3 weeks",
+      "CourseCost": "50 USD",
+      "TeachingMethod": "Distance",
+      "StartDate": "2024-09-01",
+      "id": "WSY0N_L"
     }
   ],
   "studentRegister": [
@@ -314,6 +323,15 @@
       "password": "verysecret123",
       "courseTitle": "Data Analysis",
       "id": "34"
+    },
+    {
+      "studentName": "Jessica",
+      "billAdress": "myaddress123",
+      "mobileNumber": "12345678",
+      "email": "emailValue@outlook.com",
+      "password": "verysecret123",
+      "courseTitle": "Network and Systems Administration",
+      "id": "vU8GoWd"
     }
   ]
 }
